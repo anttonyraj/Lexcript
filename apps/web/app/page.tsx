@@ -1,7 +1,9 @@
 import React from 'react';
 import { DRAFT_DISCLAIMER } from '@lexcript/shared';
-import { ShieldCheck, Scale, FileText, Clock, KeyRound, ArrowRight, Lock, Sparkles, Mic, FileCheck } from 'lucide-react';
+import { ShieldCheck, Scale, FileText, Clock, KeyRound, ArrowRight, Lock, Mic, FileCheck } from 'lucide-react';
 import { ThemeToggle } from '../components/theme-toggle';
+import { LexcriptLogo } from '../components/lexcript-logo';
+import { DepositionWaveform } from '../components/deposition-waveform';
 
 export default function LandingPage() {
   return (
@@ -38,9 +40,10 @@ export default function LandingPage() {
       {/* Navigation */}
       <header className="border-b border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md sticky top-0 z-50 transition-colors">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 via-amber-400 to-indigo-500 flex items-center justify-center font-serif font-black text-slate-950 text-xl shadow-md shadow-amber-500/20">
-              L
+          <div className="flex items-center gap-3">
+            {/* Custom Lexcript Logo: The 'L' Scale of Justice */}
+            <div className="w-9 h-9 rounded-lg bg-slate-900/10 dark:bg-slate-900/60 border border-slate-300/60 dark:border-slate-800 flex items-center justify-center shadow-xs">
+              <LexcriptLogo size={28} />
             </div>
             <span className="font-serif font-bold text-xl tracking-tight text-slate-900 dark:text-white">
               Lexcript
@@ -106,7 +109,7 @@ export default function LandingPage() {
             Your firm holds the cryptographic key.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
               href="/onboarding"
               className="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-bold px-8 py-3.5 rounded-lg shadow-lg shadow-amber-500/25 transition text-base"
@@ -119,6 +122,11 @@ export default function LandingPage() {
             >
               How We Protect Privilege
             </a>
+          </div>
+
+          {/* Real-Time Deposition Acoustic Waveform Visualizer */}
+          <div className="my-8">
+            <DepositionWaveform />
           </div>
 
           {/* Futuristic Dual-Tone Transformation Showcase Card */}
