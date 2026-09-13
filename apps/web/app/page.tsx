@@ -34,24 +34,40 @@ import { FaqAccordion } from '../components/faq-accordion';
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen relative overflow-hidden bg-white dark:bg-[#080d1a] text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div className="flex flex-col min-h-screen relative overflow-hidden bg-white dark:bg-[#080d1a] bg-gradient-to-r from-amber-500/[0.05] via-transparent to-indigo-500/[0.05] dark:from-amber-500/[0.08] dark:via-transparent dark:to-indigo-500/[0.08] text-slate-900 dark:text-slate-100 transition-colors duration-300">
       
-      {/* Ambient Radial Background Glow (Left: Legal Pad Amber / Right: Cryptographic Vault Sapphire) */}
+      {/* Sonictra-Style Dual-Tone Ambient Background Lighting (Left: Legal Pad Amber / Right: Cryptographic Vault Sapphire) */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-24 -left-28 w-[650px] h-[650px] rounded-full bg-amber-500/15 dark:bg-amber-500/10 blur-[150px] -z-10"
+        className="pointer-events-none absolute -top-24 -left-28 w-[700px] h-[700px] rounded-full bg-amber-500/25 dark:bg-amber-500/20 blur-[140px] -z-10 transition-all duration-700"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-12 -right-28 w-[700px] h-[700px] rounded-full bg-indigo-500/15 dark:bg-indigo-600/15 blur-[160px] -z-10"
+        className="pointer-events-none absolute top-12 -right-28 w-[750px] h-[750px] rounded-full bg-indigo-500/25 dark:bg-indigo-600/25 blur-[150px] -z-10 transition-all duration-700"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-[40%] -left-32 w-[600px] h-[600px] rounded-full bg-amber-400/10 dark:bg-amber-600/8 blur-[140px] -z-10"
+        className="pointer-events-none absolute top-[28%] -left-36 w-[650px] h-[650px] rounded-full bg-amber-400/20 dark:bg-amber-600/15 blur-[140px] -z-10"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-[55%] -right-32 w-[600px] h-[600px] rounded-full bg-sky-500/10 dark:bg-sky-600/10 blur-[150px] -z-10"
+        className="pointer-events-none absolute top-[40%] -right-36 w-[700px] h-[700px] rounded-full bg-sky-500/20 dark:bg-indigo-600/20 blur-[150px] -z-10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-[62%] -left-36 w-[650px] h-[650px] rounded-full bg-amber-500/20 dark:bg-amber-500/15 blur-[140px] -z-10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-[75%] -right-36 w-[700px] h-[700px] rounded-full bg-indigo-500/20 dark:bg-sky-600/20 blur-[150px] -z-10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-24 -left-28 w-[600px] h-[600px] rounded-full bg-amber-500/15 dark:bg-amber-600/10 blur-[140px] -z-10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-24 -right-28 w-[600px] h-[600px] rounded-full bg-indigo-500/20 dark:bg-indigo-600/15 blur-[150px] -z-10"
       />
 
       {/* Top Banner Notice (Mandatory Rule 2 Safe Harbor) */}
@@ -135,12 +151,17 @@ export default function LandingPage() {
         {/* ========================================================================= */}
         <section id="product" className="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-16 text-center relative">
           
-          {/* Top Pill / Badge (Decyra Inspired) */}
+          {/* Dual-Tone Architecture Tag (Sonictra Inspired) */}
           <div className="flex flex-col items-center gap-3 mb-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 dark:bg-slate-900/80 border border-amber-300/70 dark:border-slate-800 text-amber-900 dark:text-amber-300 text-xs font-semibold shadow-2xs">
-              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-              <span className="font-mono uppercase tracking-wider text-[10px]">
-                CONVERSATION INTELLIGENCE FOR US LAW FIRMS
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/10 via-slate-100 to-indigo-500/10 dark:from-amber-500/15 dark:via-slate-900/80 dark:to-indigo-500/15 border border-amber-300/40 dark:border-slate-800 text-xs font-semibold shadow-xs">
+              <span className="flex items-center gap-1.5 text-amber-800 dark:text-amber-400">
+                <Mic className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                Legal Pad Capture
+              </span>
+              <span className="text-slate-300 dark:text-slate-700">|</span>
+              <span className="flex items-center gap-1.5 text-indigo-800 dark:text-indigo-400">
+                <Lock className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+                Zero-Retention Vault
               </span>
             </div>
             
@@ -156,16 +177,15 @@ export default function LandingPage() {
             </a>
           </div>
 
-          {/* Main Headline (Playfair / Georgia Style) */}
-          <div className="max-w-4xl mx-auto mb-6">
+          {/* Futuristic Dual-Tone Headline (Sonictra Style) */}
+          <div className="max-w-5xl mx-auto mb-6">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
-              Turn attorney audio into{' '}
-              <span className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 dark:from-amber-300 dark:via-amber-400 dark:to-amber-200 bg-clip-text text-transparent">
-                court-ready transcripts
-              </span>{' '}
-              and{' '}
+              <span className="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-500 dark:from-amber-300 dark:via-amber-400 dark:to-amber-200 bg-clip-text text-transparent">
+                Every conversation on the record.
+              </span>
+              <br />
               <span className="bg-gradient-to-r from-indigo-700 via-indigo-600 to-sky-600 dark:from-indigo-300 dark:via-indigo-400 dark:to-sky-300 bg-clip-text text-transparent">
-                billed hours.
+                Every minute on the invoice.
               </span>
             </h1>
             <p className="mt-4 text-xl sm:text-2xl font-serif italic text-amber-800 dark:text-amber-400 font-medium">
@@ -199,12 +219,63 @@ export default function LandingPage() {
           </div>
 
           {/* Reassurance Subtext */}
-          <p className="text-xs text-slate-500 dark:text-slate-400 italic">
+          <p className="text-xs text-slate-500 dark:text-slate-400 italic mb-10">
             Pure verbatim acoustic speech-to-text · Zero LLM hallucination in transcript testimony · Audio purged immediately.
           </p>
 
+          {/* Futuristic Dual-Tone Transformation Showcase Card (Left: Legal Pad / Right: Vault & Clio) */}
+          <div className="relative mx-auto max-w-4xl p-1 rounded-2xl bg-gradient-to-r from-amber-500/50 via-slate-300/40 to-indigo-500/50 dark:from-amber-500/40 dark:via-slate-800/60 dark:to-indigo-500/40 shadow-2xl mb-16">
+            <div className="bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl rounded-[15px] p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-left relative overflow-hidden">
+              {/* Left Side: Audio Capture (The Legal Yellow Pad) */}
+              <div className="space-y-4 pr-0 md:pr-4 border-b md:border-b-0 md:border-r border-slate-200/80 dark:border-slate-800/80 pb-6 md:pb-0">
+                <div className="flex items-center justify-between">
+                  <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-amber-100 dark:bg-amber-500/10 border border-amber-300/60 dark:border-amber-500/30 text-amber-900 dark:text-amber-400 text-xs font-mono font-semibold">
+                    <Mic className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 animate-pulse" />
+                    LIVE INGESTION
+                  </div>
+                  <span className="text-xs font-mono text-slate-400">16 kHz Opus · Zero Retention</span>
+                </div>
+                <div className="p-4 rounded-lg bg-amber-50/70 dark:bg-amber-950/10 border border-amber-200/80 dark:border-amber-900/30 font-serif text-sm text-slate-800 dark:text-slate-300 leading-relaxed">
+                  <p className="text-xs font-mono text-amber-700 dark:text-amber-400 mb-1 font-bold">
+                    Q. (Examining Attorney):
+                  </p>
+                  "Did you review the quarterly inventory discrepancies prior to signing the vendor declaration?"
+                </div>
+                <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                  <span>SHA-256 Verified · Consent Recorded</span>
+                </div>
+              </div>
+
+              {/* Right Side: Ledger & Work Product (The Vault / LEDES) */}
+              <div className="space-y-4 pl-0 md:pl-4">
+                <div className="flex items-center justify-between">
+                  <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-indigo-100 dark:bg-indigo-500/10 border border-indigo-300/60 dark:border-indigo-500/30 text-indigo-900 dark:text-indigo-400 text-xs font-mono font-semibold">
+                    <FileCheck className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+                    CLIO DRAFT ENTRY
+                  </div>
+                  <span className="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-bold">
+                    +0.4 hrs ($180.00)
+                  </span>
+                </div>
+                <div className="p-4 rounded-lg bg-indigo-50/70 dark:bg-indigo-950/10 border border-indigo-200/80 dark:border-indigo-900/30 text-sm text-slate-800 dark:text-slate-300 leading-relaxed font-sans">
+                  <div className="flex items-center gap-2 text-xs font-mono text-indigo-700 dark:text-indigo-400 mb-1 font-bold">
+                    <span>CODE: A106 (Client Comm)</span>
+                    <span>·</span>
+                    <span>TASK: L330</span>
+                  </div>
+                  "Deposition examination and witness prep regarding vendor inventory contract."
+                </div>
+                <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-medium">Ready for Attorney Approval</span>
+                  <span className="font-mono">Sync: Clio Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Decyra-Style 3-Column Data Flow Architecture Showcase */}
-          <div className="mt-16 sm:mt-20">
+          <div className="mt-8">
             <ArchitectureFlow />
           </div>
         </section>
