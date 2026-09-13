@@ -13,8 +13,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-amber-500/20 selection:text-amber-200">
+    <html lang="en" suppressHydrationWarning className="dark">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const stored = localStorage.getItem('lexcript_theme');
+                if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body className="min-h-screen bg-[#fbfaf6] dark:bg-[#080d1a] text-slate-900 dark:text-slate-100 antialiased selection:bg-amber-500/20 selection:text-amber-800 dark:selection:text-amber-200 transition-colors duration-200">
         {children}
       </body>
     </html>
