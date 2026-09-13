@@ -1,0 +1,85 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions for authentication and tenant isolation
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isMemberOfFirm(firmId) {
+      return isAuthenticated() &&
+        (request.auth.token.firmId == firmId ||
+         resource.data.firmId == firmId);
+    }
+
+    // Default deny all client access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Firm document: Read-only for authenticated firm members, writes restricted to Admin SDK
+    match /firms/{firmId} {
+      allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+      allow write: if false; // Only server-side via firebase-admin
+
+      // Users subcollection
+      match /users/{userId} {
+        allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+        allow write: if false;
+      }
+
+      // Clients subcollection
+      match /clients/{clientId} {
+        allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+        allow write: if false;
+      }
+
+      // Matters subcollection
+      match /matters/{matterId} {
+        allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+        allow write: if false;
+      }
+
+      // Recordings subcollection
+      match /recordings/{recordingId} {
+        allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+        allow write: if false;
+      }
+
+      // Transcripts subcollection
+      match /transcripts/{transcriptId} {
+        allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+        allow write: if false;
+      }
+
+      // Time entries subcollection
+      match /timeEntries/{entryId} {
+        allow read: if isAuthenticated() && request.auth.token.firmId == firmId;
+        allow write: if false;
+      }
+
+      // Usage subcollection
+      match /usage/{usageId} {
+        allow read: if isAuthenticated() &&
+          request.auth.token.firmId == firmId &&
+          (request.auth.token.role == 'owner' || request.auth.token.role == 'billing');
+        allow write: if false;
+      }
+
+      // Audit events: Strictly read-only for firm owner/attorneys; append/modify/delete strictly forbidden for clients
+      match /auditEvents/{eventId} {
+        allow read: if isAuthenticated() &&
+          request.auth.token.firmId == firmId &&
+          (request.auth.token.role == 'owner' || request.auth.token.role == 'attorney');
+        allow write: if false; // Strictly append-only via server firebase-admin
+      }
+    }
+
+    // Global configuration (budgets, pricing): internal read-only
+    match /config/{configDoc} {
+      allow read: if isAuthenticated() && request.auth.token.role == 'owner';
+      allow write: if false;
+    }
+  }
+}

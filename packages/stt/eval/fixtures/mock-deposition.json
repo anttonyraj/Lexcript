@@ -1,0 +1,131 @@
+{
+  "name": "mock-deposition",
+  "transcriptType": "deposition",
+  "groundTruth": {
+    "durationSec": 45.2,
+    "text": "Please state your full legal name for the record. Jonathan Edward Vance. And Mr. Vance, are you currently employed by Apex Logistics Inc.? Yes, I have served as Chief Operating Officer since March of 2021."
+  },
+  "deepgramResponse": {
+    "metadata": {
+      "request_id": "dg-fixture-depo-001",
+      "duration": 45.2,
+      "model_info": { "nova-3": {} },
+      "extra": { "recordingId": "rec-depo-001", "firmId": "firm-alpha" }
+    },
+    "results": {
+      "utterances": [
+        {
+          "start": 0.5,
+          "end": 3.8,
+          "speaker": 0,
+          "transcript": "Please state your full legal name for the record.",
+          "words": [
+            { "word": "Please", "punctuated_word": "Please", "start": 0.5, "end": 0.9, "confidence": 0.98 },
+            { "word": "state", "punctuated_word": "state", "start": 1.0, "end": 1.3, "confidence": 0.99 },
+            { "word": "your", "punctuated_word": "your", "start": 1.4, "end": 1.6, "confidence": 0.99 },
+            { "word": "full", "punctuated_word": "full", "start": 1.7, "end": 1.9, "confidence": 0.97 },
+            { "word": "legal", "punctuated_word": "legal", "start": 2.0, "end": 2.4, "confidence": 0.99 },
+            { "word": "name", "punctuated_word": "name", "start": 2.5, "end": 2.8, "confidence": 0.99 },
+            { "word": "for", "punctuated_word": "for", "start": 2.9, "end": 3.1, "confidence": 0.98 },
+            { "word": "the", "punctuated_word": "the", "start": 3.2, "end": 3.3, "confidence": 0.99 },
+            { "word": "record.", "punctuated_word": "record.", "start": 3.4, "end": 3.8, "confidence": 0.99 }
+          ]
+        },
+        {
+          "start": 4.5,
+          "end": 6.8,
+          "speaker": 1,
+          "transcript": "Jonathan Edward Vance.",
+          "words": [
+            { "word": "Jonathan", "punctuated_word": "Jonathan", "start": 4.5, "end": 5.1, "confidence": 0.99 },
+            { "word": "Edward", "punctuated_word": "Edward", "start": 5.2, "end": 5.8, "confidence": 0.98 },
+            { "word": "Vance.", "punctuated_word": "Vance.", "start": 5.9, "end": 6.8, "confidence": 0.99 }
+          ]
+        },
+        {
+          "start": 7.5,
+          "end": 12.2,
+          "speaker": 0,
+          "transcript": "And Mr. Vance, are you currently employed by Apex Logistics Inc.?",
+          "words": [
+            { "word": "And", "punctuated_word": "And", "start": 7.5, "end": 7.8, "confidence": 0.97 },
+            { "word": "Mr.", "punctuated_word": "Mr.", "start": 7.9, "end": 8.2, "confidence": 0.98 },
+            { "word": "Vance,", "punctuated_word": "Vance,", "start": 8.3, "end": 8.7, "confidence": 0.99 },
+            { "word": "are", "punctuated_word": "are", "start": 8.8, "end": 9.0, "confidence": 0.99 },
+            { "word": "you", "punctuated_word": "you", "start": 9.1, "end": 9.3, "confidence": 0.99 },
+            { "word": "currently", "punctuated_word": "currently", "start": 9.4, "end": 9.9, "confidence": 0.98 },
+            { "word": "employed", "punctuated_word": "employed", "start": 10.0, "end": 10.5, "confidence": 0.99 },
+            { "word": "by", "punctuated_word": "by", "start": 10.6, "end": 10.8, "confidence": 0.98 },
+            { "word": "Apex", "punctuated_word": "Apex", "start": 10.9, "end": 11.3, "confidence": 0.99 },
+            { "word": "Logistics", "punctuated_word": "Logistics", "start": 11.4, "end": 11.8, "confidence": 0.99 },
+            { "word": "Inc.?", "punctuated_word": "Inc.?", "start": 11.9, "end": 12.2, "confidence": 0.97 }
+          ]
+        },
+        {
+          "start": 13.0,
+          "end": 18.1,
+          "speaker": 1,
+          "transcript": "Yes, I have served as Chief Operating Officer since March of 2021.",
+          "words": [
+            { "word": "Yes,", "punctuated_word": "Yes,", "start": 13.0, "end": 13.5, "confidence": 0.99 },
+            { "word": "I", "punctuated_word": "I", "start": 13.6, "end": 13.8, "confidence": 0.99 },
+            { "word": "have", "punctuated_word": "have", "start": 13.9, "end": 14.1, "confidence": 0.99 },
+            { "word": "served", "punctuated_word": "served", "start": 14.2, "end": 14.6, "confidence": 0.99 },
+            { "word": "as", "punctuated_word": "as", "start": 14.7, "end": 14.9, "confidence": 0.98 },
+            { "word": "Chief", "punctuated_word": "Chief", "start": 15.0, "end": 15.4, "confidence": 0.99 },
+            { "word": "Operating", "punctuated_word": "Operating", "start": 15.5, "end": 16.0, "confidence": 0.99 },
+            { "word": "Officer", "punctuated_word": "Officer", "start": 16.1, "end": 16.6, "confidence": 0.99 },
+            { "word": "since", "punctuated_word": "since", "start": 16.7, "end": 17.0, "confidence": 0.98 },
+            { "word": "March", "punctuated_word": "March", "start": 17.1, "end": 17.4, "confidence": 0.99 },
+            { "word": "of", "punctuated_word": "of", "start": 17.5, "end": 17.6, "confidence": 0.99 },
+            { "word": "2021.", "punctuated_word": "2021.", "start": 17.7, "end": 18.1, "confidence": 0.99 }
+          ]
+        }
+      ]
+    }
+  },
+  "sonioxResponse": {
+    "job_id": "soniox-fixture-depo-001",
+    "recording_id": "rec-depo-001",
+    "firm_id": "firm-alpha",
+    "audio_duration_sec": 45.2,
+    "model": "soniox-legal-v1",
+    "tokens": [
+      { "text": "Please ", "start_ms": 500, "duration_ms": 400, "speaker": "spk0", "confidence": 0.98 },
+      { "text": "state ", "start_ms": 1000, "duration_ms": 300, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "your ", "start_ms": 1400, "duration_ms": 200, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "full ", "start_ms": 1700, "duration_ms": 200, "speaker": "spk0", "confidence": 0.97 },
+      { "text": "legal ", "start_ms": 2000, "duration_ms": 400, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "name ", "start_ms": 2500, "duration_ms": 300, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "for ", "start_ms": 2900, "duration_ms": 200, "speaker": "spk0", "confidence": 0.98 },
+      { "text": "the ", "start_ms": 3200, "duration_ms": 100, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "record.", "start_ms": 3400, "duration_ms": 400, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "Jonathan ", "start_ms": 4500, "duration_ms": 600, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "Edward ", "start_ms": 5200, "duration_ms": 600, "speaker": "spk1", "confidence": 0.98 },
+      { "text": "Vance.", "start_ms": 5900, "duration_ms": 900, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "And ", "start_ms": 7500, "duration_ms": 300, "speaker": "spk0", "confidence": 0.97 },
+      { "text": "Mr. ", "start_ms": 7900, "duration_ms": 300, "speaker": "spk0", "confidence": 0.98 },
+      { "text": "Vance, ", "start_ms": 8300, "duration_ms": 400, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "are ", "start_ms": 8800, "duration_ms": 200, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "you ", "start_ms": 9100, "duration_ms": 200, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "currently ", "start_ms": 9400, "duration_ms": 500, "speaker": "spk0", "confidence": 0.98 },
+      { "text": "employed ", "start_ms": 10000, "duration_ms": 500, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "by ", "start_ms": 10600, "duration_ms": 200, "speaker": "spk0", "confidence": 0.98 },
+      { "text": "Apex ", "start_ms": 10900, "duration_ms": 400, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "Logistics ", "start_ms": 11400, "duration_ms": 400, "speaker": "spk0", "confidence": 0.99 },
+      { "text": "Inc.?", "start_ms": 11900, "duration_ms": 300, "speaker": "spk0", "confidence": 0.97 },
+      { "text": "Yes, ", "start_ms": 13000, "duration_ms": 500, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "I ", "start_ms": 13600, "duration_ms": 200, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "have ", "start_ms": 13900, "duration_ms": 200, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "served ", "start_ms": 14200, "duration_ms": 400, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "as ", "start_ms": 14700, "duration_ms": 200, "speaker": "spk1", "confidence": 0.98 },
+      { "text": "Chief ", "start_ms": 15000, "duration_ms": 400, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "Operating ", "start_ms": 15500, "duration_ms": 500, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "Officer ", "start_ms": 16100, "duration_ms": 500, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "since ", "start_ms": 16700, "duration_ms": 300, "speaker": "spk1", "confidence": 0.98 },
+      { "text": "March ", "start_ms": 17100, "duration_ms": 300, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "of ", "start_ms": 17500, "duration_ms": 100, "speaker": "spk1", "confidence": 0.99 },
+      { "text": "2021.", "start_ms": 17700, "duration_ms": 400, "speaker": "spk1", "confidence": 0.99 }
+    ]
+  }
+}

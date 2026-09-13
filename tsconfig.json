@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@lexcript/shared": ["packages/shared/src"],
+      "@lexcript/stt": ["packages/stt/src"],
+      "@lexcript/transcript": ["packages/transcript/src"],
+      "@lexcript/billing": ["packages/billing/src"],
+      "@lexcript/pm": ["packages/pm/src"],
+      "@lexcript/intelligence": ["packages/intelligence/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", ".next"]
+}

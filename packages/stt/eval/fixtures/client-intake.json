@@ -1,0 +1,131 @@
+{
+  "name": "client-intake",
+  "transcriptType": "call",
+  "groundTruth": {
+    "durationSec": 32.0,
+    "text": "Hello Sarah, thanks for calling. Can you give me an overview of what occurred regarding the software licensing agreement?\nGood morning Mr. Davis. On August 14th, the vendor notified us they were terminating the agreement prematurely without the contractual sixty days cure notice."
+  },
+  "deepgramResponse": {
+    "metadata": {
+      "request_id": "dg-fixture-intake-002",
+      "duration": 32.0,
+      "model_info": { "nova-3": {} },
+      "extra": { "recordingId": "rec-intake-002", "firmId": "firm-alpha" }
+    },
+    "results": {
+      "utterances": [
+        {
+          "start": 0.2,
+          "end": 6.5,
+          "speaker": 0,
+          "transcript": "Hello Sarah, thanks for calling. Can you give me an overview of what occurred regarding the software licensing agreement?",
+          "words": [
+            { "word": "Hello", "punctuated_word": "Hello", "start": 0.2, "end": 0.6, "confidence": 0.99 },
+            { "word": "Sarah,", "punctuated_word": "Sarah,", "start": 0.7, "end": 1.1, "confidence": 0.99 },
+            { "word": "thanks", "punctuated_word": "thanks", "start": 1.2, "end": 1.5, "confidence": 0.98 },
+            { "word": "for", "punctuated_word": "for", "start": 1.6, "end": 1.8, "confidence": 0.99 },
+            { "word": "calling.", "punctuated_word": "calling.", "start": 1.9, "end": 2.3, "confidence": 0.99 },
+            { "word": "Can", "punctuated_word": "Can", "start": 2.5, "end": 2.7, "confidence": 0.99 },
+            { "word": "you", "punctuated_word": "you", "start": 2.8, "end": 2.9, "confidence": 0.99 },
+            { "word": "give", "punctuated_word": "give", "start": 3.0, "end": 3.2, "confidence": 0.99 },
+            { "word": "me", "punctuated_word": "me", "start": 3.3, "end": 3.4, "confidence": 0.99 },
+            { "word": "an", "punctuated_word": "an", "start": 3.5, "end": 3.6, "confidence": 0.99 },
+            { "word": "overview", "punctuated_word": "overview", "start": 3.7, "end": 4.2, "confidence": 0.98 },
+            { "word": "of", "punctuated_word": "of", "start": 4.3, "end": 4.4, "confidence": 0.99 },
+            { "word": "what", "punctuated_word": "what", "start": 4.5, "end": 4.7, "confidence": 0.99 },
+            { "word": "occurred", "punctuated_word": "occurred", "start": 4.8, "end": 5.2, "confidence": 0.98 },
+            { "word": "regarding", "punctuated_word": "regarding", "start": 5.3, "end": 5.7, "confidence": 0.99 },
+            { "word": "the", "punctuated_word": "the", "start": 5.8, "end": 5.9, "confidence": 0.99 },
+            { "word": "software", "punctuated_word": "software", "start": 6.0, "end": 6.4, "confidence": 0.99 },
+            { "word": "licensing", "punctuated_word": "licensing", "start": 6.5, "end": 6.9, "confidence": 0.99 },
+            { "word": "agreement?", "punctuated_word": "agreement?", "start": 7.0, "end": 7.5, "confidence": 0.98 }
+          ]
+        },
+        {
+          "start": 8.0,
+          "end": 17.5,
+          "speaker": 1,
+          "transcript": "Good morning Mr. Davis. On August 14th, the vendor notified us they were terminating the agreement prematurely without the contractual sixty days cure notice.",
+          "words": [
+            { "word": "Good", "punctuated_word": "Good", "start": 8.0, "end": 8.3, "confidence": 0.99 },
+            { "word": "morning", "punctuated_word": "morning", "start": 8.4, "end": 8.8, "confidence": 0.99 },
+            { "word": "Mr.", "punctuated_word": "Mr.", "start": 8.9, "end": 9.2, "confidence": 0.99 },
+            { "word": "Davis.", "punctuated_word": "Davis.", "start": 9.3, "end": 9.8, "confidence": 0.98 },
+            { "word": "On", "punctuated_word": "On", "start": 10.0, "end": 10.2, "confidence": 0.99 },
+            { "word": "August", "punctuated_word": "August", "start": 10.3, "end": 10.7, "confidence": 0.99 },
+            { "word": "14th,", "punctuated_word": "14th,", "start": 10.8, "end": 11.3, "confidence": 0.97 },
+            { "word": "the", "punctuated_word": "the", "start": 11.4, "end": 11.5, "confidence": 0.99 },
+            { "word": "vendor", "punctuated_word": "vendor", "start": 11.6, "end": 12.0, "confidence": 0.99 },
+            { "word": "notified", "punctuated_word": "notified", "start": 12.1, "end": 12.6, "confidence": 0.99 },
+            { "word": "us", "punctuated_word": "us", "start": 12.7, "end": 12.9, "confidence": 0.99 },
+            { "word": "they", "punctuated_word": "they", "start": 13.0, "end": 13.2, "confidence": 0.99 },
+            { "word": "were", "punctuated_word": "were", "start": 13.3, "end": 13.5, "confidence": 0.99 },
+            { "word": "terminating", "punctuated_word": "terminating", "start": 13.6, "end": 14.2, "confidence": 0.99 },
+            { "word": "the", "punctuated_word": "the", "start": 14.3, "end": 14.4, "confidence": 0.99 },
+            { "word": "agreement", "punctuated_word": "agreement", "start": 14.5, "end": 15.0, "confidence": 0.99 },
+            { "word": "prematurely", "punctuated_word": "prematurely", "start": 15.1, "end": 15.8, "confidence": 0.98 },
+            { "word": "without", "punctuated_word": "without", "start": 15.9, "end": 16.3, "confidence": 0.99 },
+            { "word": "the", "punctuated_word": "the", "start": 16.4, "end": 16.5, "confidence": 0.99 },
+            { "word": "contractual", "punctuated_word": "contractual", "start": 16.6, "end": 17.2, "confidence": 0.99 },
+            { "word": "sixty", "punctuated_word": "sixty", "start": 17.3, "end": 17.6, "confidence": 0.99 },
+            { "word": "days", "punctuated_word": "days", "start": 17.7, "end": 18.0, "confidence": 0.99 },
+            { "word": "cure", "punctuated_word": "cure", "start": 18.1, "end": 18.4, "confidence": 0.98 },
+            { "word": "notice.", "punctuated_word": "notice.", "start": 18.5, "end": 19.0, "confidence": 0.99 }
+          ]
+        }
+      ]
+    }
+  },
+  "sonioxResponse": {
+    "job_id": "soniox-fixture-intake-002",
+    "recording_id": "rec-intake-002",
+    "firm_id": "firm-alpha",
+    "audio_duration_sec": 32.0,
+    "model": "soniox-legal-v1",
+    "tokens": [
+      { "text": "Hello ", "start_ms": 200, "duration_ms": 400, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "Sarah, ", "start_ms": 700, "duration_ms": 400, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "thanks ", "start_ms": 1200, "duration_ms": 300, "speaker": "attorney", "confidence": 0.98 },
+      { "text": "for ", "start_ms": 1600, "duration_ms": 200, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "calling. ", "start_ms": 1900, "duration_ms": 400, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "Can ", "start_ms": 2500, "duration_ms": 200, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "you ", "start_ms": 2800, "duration_ms": 100, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "give ", "start_ms": 3000, "duration_ms": 200, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "me ", "start_ms": 3300, "duration_ms": 100, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "an ", "start_ms": 3500, "duration_ms": 100, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "overview ", "start_ms": 3700, "duration_ms": 500, "speaker": "attorney", "confidence": 0.98 },
+      { "text": "of ", "start_ms": 4300, "duration_ms": 100, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "what ", "start_ms": 4500, "duration_ms": 200, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "occurred ", "start_ms": 4800, "duration_ms": 400, "speaker": "attorney", "confidence": 0.98 },
+      { "text": "regarding ", "start_ms": 5300, "duration_ms": 400, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "the ", "start_ms": 5800, "duration_ms": 100, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "software ", "start_ms": 6000, "duration_ms": 400, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "licensing ", "start_ms": 6500, "duration_ms": 400, "speaker": "attorney", "confidence": 0.99 },
+      { "text": "agreement?", "start_ms": 7000, "duration_ms": 500, "speaker": "attorney", "confidence": 0.98 },
+      { "text": "Good ", "start_ms": 8000, "duration_ms": 300, "speaker": "client", "confidence": 0.99 },
+      { "text": "morning ", "start_ms": 8400, "duration_ms": 400, "speaker": "client", "confidence": 0.99 },
+      { "text": "Mr. ", "start_ms": 8900, "duration_ms": 300, "speaker": "client", "confidence": 0.99 },
+      { "text": "Davis. ", "start_ms": 9300, "duration_ms": 500, "speaker": "client", "confidence": 0.98 },
+      { "text": "On ", "start_ms": 10000, "duration_ms": 200, "speaker": "client", "confidence": 0.99 },
+      { "text": "August ", "start_ms": 10300, "duration_ms": 400, "speaker": "client", "confidence": 0.99 },
+      { "text": "14th, ", "start_ms": 10800, "duration_ms": 500, "speaker": "client", "confidence": 0.97 },
+      { "text": "the ", "start_ms": 11400, "duration_ms": 100, "speaker": "client", "confidence": 0.99 },
+      { "text": "vendor ", "start_ms": 11600, "duration_ms": 400, "speaker": "client", "confidence": 0.99 },
+      { "text": "notified ", "start_ms": 12100, "duration_ms": 500, "speaker": "client", "confidence": 0.99 },
+      { "text": "us ", "start_ms": 12700, "duration_ms": 200, "speaker": "client", "confidence": 0.99 },
+      { "text": "they ", "start_ms": 13000, "duration_ms": 200, "speaker": "client", "confidence": 0.99 },
+      { "text": "were ", "start_ms": 13300, "duration_ms": 200, "speaker": "client", "confidence": 0.99 },
+      { "text": "terminating ", "start_ms": 13600, "duration_ms": 600, "speaker": "client", "confidence": 0.99 },
+      { "text": "the ", "start_ms": 14300, "duration_ms": 100, "speaker": "client", "confidence": 0.99 },
+      { "text": "agreement ", "start_ms": 14500, "duration_ms": 500, "speaker": "client", "confidence": 0.99 },
+      { "text": "prematurely ", "start_ms": 15100, "duration_ms": 700, "speaker": "client", "confidence": 0.98 },
+      { "text": "without ", "start_ms": 15900, "duration_ms": 400, "speaker": "client", "confidence": 0.99 },
+      { "text": "the ", "start_ms": 16400, "duration_ms": 100, "speaker": "client", "confidence": 0.99 },
+      { "text": "contractual ", "start_ms": 16600, "duration_ms": 600, "speaker": "client", "confidence": 0.99 },
+      { "text": "sixty ", "start_ms": 17300, "duration_ms": 300, "speaker": "client", "confidence": 0.99 },
+      { "text": "days ", "start_ms": 17700, "duration_ms": 300, "speaker": "client", "confidence": 0.99 },
+      { "text": "cure ", "start_ms": 18100, "duration_ms": 300, "speaker": "client", "confidence": 0.98 },
+      { "text": "notice.", "start_ms": 18500, "duration_ms": 500, "speaker": "client", "confidence": 0.99 }
+    ]
+  }
+}
